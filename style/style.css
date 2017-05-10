@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo");
+@font-face {
+  font-family: "Aurebesh";
+  src: url("../src/assets/aurebesh/Aurebesh Bold.ttf"); }
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: -webkit-linear-gradient(left, white 50%, black 50%);
+  background: -o-linear-gradient(left, white 50%, black 50%);
+  background: linear-gradient(to right, white 50%, black 50%);
+  /*display: flex;
+  align-content: flex-start;
+  justify-content: center;*/
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: Baloo, arial; }
+
+a {
+  text-decoration: none; }
+
+.app-main {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.app-children {
+  height: 100vh;
+  width: 100vw;
+  color: white; }
+
+.people {
+  color: white;
+  background: #1e1e1e;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  margin: 0;
+  padding: 0; }
+
+.linktoitem {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  z-index: 3; }
+
+ul.results {
+  font-family: Baloo, Arial;
+  text-align: center;
+  margin-top: 6em; }
+
+li.result {
+  font-size: 24px; }
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  font-size: 26px; }
+  .nav .prev, .nav .next {
+    padding: 0.5em;
+    z-index: 3;
+    cursor: pointer; }
+
+.person {
+  background: #1e1e1e;
+  width: 100vw;
+  font-size: 1em;
+  min-height: 100vh;
+  max-height: 200%;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 1.6em;
+  padding-top: 5em; }
+  .person .pageContent {
+    margin: 0 auto; }
+  .person h1 {
+    margin: 1em; }
+  .person .searchResult {
+    color: white;
+    position: relative;
+    z-index: 4; }
+
+.field {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: greenyellow;
+  flex-flow: row wrap; }
+
+.labl {
+  flex: 0 0 100%; }
+
+.contentValue {
+  flex: 0 0 100%;
+  height: auto;
+  display: inline-block;
+  color: white; }
+
+.water {
+  flex: 0 0 auto;
+  position: relative;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+  height: 10px;
+  width: 150px;
+  background: #3e3e3e; }
+  .water .waterContent {
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    height: 8px;
+    background: azure; }
+
+.back {
+  display: block;
+  font-size: 20px;
+  margin: 2em; }
+
+.person a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  z-index: 3;
+  display: block;
+  color: navajowhite; }
+
+.aurebesh-btn {
+  font-family: Baloo, arial;
+  font-weight: 100;
+  font-size: 14px;
+  background: crimson;
+  position: absolute;
+  border: none;
+  outline: none;
+  height: 3em;
+  width: 7em;
+  border-radius: 5px;
+  top: 1.1em;
+  right: 2em;
+  z-index: 2;
+  cursor: pointer; }
+
+.menu-icon {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  height: 2em;
+  width: auto;
+  z-index: 2;
+  cursor: pointer; }
+
+.menu-body-div {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+.english-menu, .aurebesh-menu {
+  box-sizing: border-box;
+  padding: 0;
+  text-overflow: ellipsis;
+  whitespace: nowrap;
+  overflow: hidden;
+  z-index: 3;
+  position: absolute;
+  top: 5em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center; }
+  .english-menu .search-btn, .english-menu .searchbox, .aurebesh-menu .search-btn, .aurebesh-menu .searchbox {
+    display: block;
+    height: 2em;
+    width: 15em;
+    border-radius: 10px;
+    margin: 0 auto;
+    outline: none; }
+  .english-menu .search-btn, .aurebesh-menu .search-btn {
+    margin-top: 0.3em;
+    background: powderblue; }
+  .english-menu .searchbox, .aurebesh-menu .searchbox {
+    margin-top: 2em;
+    padding: 4px; }
+  .english-menu ul, .aurebesh-menu ul {
+    list-style: none;
+    padding: 1em 0; }
+
+.english-menu {
+  display: none;
+  font-family: Baloo, arial;
+  background: ghostwhite; }
+  .english-menu a {
+    color: black; }
+  .english-menu ul li:hover {
+    background: azure;
+    color: lime; }
+
+.aurebesh-menu {
+  display: none;
+  font-family: 'Aurebesh';
+  background: #0e0e0e;
+  color: white;
+  line-height: 1.6; }
+  .aurebesh-menu a {
+    color: white; }
+  .aurebesh-menu ul li:hover {
+    background: #1e1e1e;
+    color: crimson; }
+
+@media only screen and (min-width: 620px) {
+  .menu-body-div {
+    justify-content: space-between; }
+
+  .english-menu, .aurebesh-menu {
+    flex: 0 1 20%; }
+
+  .english-menu {
+    left: 0;
+    right: 75vw; }
+
+  .aurebesh-menu {
+    left: 75vw;
+    right: 0; }
+
+  .person {
+    padding-top: 5em;
+    line-height: 1.9em;
+    font-size: 1em; }
+
+  .labl {
+    flex: 0 0 auto; }
+
+  .contentValue {
+    flex: 0 0 auto;
+    display: block;
+    color: white;
+    padding-left: 0.5em; }
+
+  .water {
+    width: 200px;
+    height: 20px; } }
+.logo {
+  height: 13vh;
+  display: block;
+  left: 50%;
+  top: 5vh;
+  transform: translate(-50%, 0);
+  position: fixed; }
+
+.image1 {
+  height: 80vh;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  /*flex: 0 1;*/ }
+
+/*# sourceMappingURL=style.css.map */
